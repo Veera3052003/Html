@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title><!--Page Title-->
+    <link rel="stylesheet" href="HTML_Hands_On_Practice_1.css"><!--Linked with css file-->
+</head>
+<body>
+    <h1>Task</h1><!--Heading tag-->
+    <hr/><br/><!--Horizontal Line-->
+    <nav> <!--Navigation bar starts-->
+        <a href="#">Assignment </a>
+        <a href="#general">General </a>
+        <a href="#">Time </a>
+        <a href="#">Customer </a>
+        <a href="#">Location </a>
+        <a href="#">Resources </a>
+        <a href="#">Requirements</a>
+    </nav><!--Navigation bar ends-->
+    <form id="general" action=""><!--Form starts-->
+        <div class="Child_1"><!--Left side is created under Child_1 div-->
+            <label class="starlabel">CallID:</label><!--CallID label with text as input and made it as required field-->
+            <input type="text" required><br/>
+            <label class="starlabel">Priority:</label><!--Priority label with number as input and made it as required field-->
+            <input type="number" min="1" max="10" required><br/>
+            <label>Task Type:</label><!--Task Type label with datalist as input. datalist tag is used to select the input of the field either from the list or the user can fill the field by his own-->
+            <input list="Task"><!--The value of the list and datalist id should be same-->
+            <datalist id="Task"><!--datalist starts-->
+                <option value="Maintenance">Maintenance</option>
+                <option value="Delivery">Delivery</option>
+                <option value="Bug">Bug</option>
+                <option value="OS Installation">OS Installation</option>
+            </datalist><!--datalist ends-->
+            <label class="starlabel">Duration: (Day(s)/Hour(s)/Minute(s))</label><!--Duration label with number(days,hrs and mins) as input and span tag is used to bring all the three input number fields into a single line.-->
+            <span><input id="days" type="number" min="1" max="100" required><input id="hrs" type="number" min="1" max="100" requried><input id="min"type="number" min="1" max="100" required></span><br/>
+            <label>Calender:</label>
+            <input type="date">
+        </div>
+        <div class="Child_2"><!--Right side is created under Child_2 div-->
+            <label class="starlabel">Number:</label><!--Number label with number as input and made it as required field-->
+            <input type="number" min="1" max="100" required></br>
+            <label class="starlabel">Status</label><!--Status label with dropdown box as input and made it as required field-->
+            <select class="status" name="dropdown">
+                <option value="Scheduled">Scheduled</option>
+                <option value="Not Scheduled">Not Scheduled</option>
+            </select><br/>
+            <label>Pinned:</label><!--Pinned label with checkbox as input-->
+            <input type="checkbox"><br/>
+            <label>In Jeopardy:</label><!--In Jeopardy label with checkbox as input-->
+            <input type="checkbox"><br/>
+            <label>Jeopardy State:</label><!--In Jeopardy State label with datalist as input-->
+            <input list="Jeopardy State">
+            <datalist id="Jeopardy State">
+                <option value="Not Defined">Not Defined</option>
+            </datalist>
+        </div>
+    </form><!--Form ends-->
+</body>
+</html>

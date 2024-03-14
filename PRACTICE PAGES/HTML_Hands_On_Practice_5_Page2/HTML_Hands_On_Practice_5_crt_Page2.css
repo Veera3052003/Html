@@ -1,0 +1,105 @@
+.content{
+    margin-left: 15%;
+    margin-right:15%;
+    padding:74px;
+    border:solid;
+    overflow:hidden;
+}
+.image_container{
+    margin-top:-26px;
+    margin-bottom:30px;
+    margin-left:-20px;
+    margin-right:10px;
+}
+.image_1,.image_2,.image_3{
+    height:160px;
+    width:206px;
+    transform:skewX(-13deg);
+    border: solid #4b8ef1;
+}
+h1{
+    font-size: 48px;
+    text-align:center;
+}
+h4{
+    font-size:22px;
+}
+p{
+    font-size:15px;
+}
+.body_contents,.footer_contents{
+    margin-left: 30px;
+    margin-right: -12px 
+}
+.body_container{
+    padding:15px;
+}
+.icon_size{
+    font-size: 100px;
+}
+.bi-thermometer-snow,.bi-volume-up-fill,.fa-gear,.bi-wrench-adjustable{
+    color:white;
+}
+.icon_center{
+    text-align: center;
+    margin-top:-24px;
+}
+.font_awesome_icon{
+    margin-top:26px;
+}
+.background_color{
+    background-color: #5084cc;
+    height: 1094px;
+    margin-top: -988px;
+    margin-left: -25px;
+    margin-right: -210px;
+    z-index: 1;
+    transform:skewX(-9deg);
+}
+.main_container{
+    z-index:2;
+    position:relative;
+    color:white;
+}
+.footer_contents{
+    padding-top:26px;
+    background-color:#e8e8e8;
+    margin-left: -74px;
+    margin-right: -74px;
+    margin-bottom: -90px;
+}
+.footer_container{
+    padding: 39px;
+}
+.footer_footer{
+    text-align: center;
+}
+.footer_footer p{
+    padding-bottom:36px;
+    margin-left: 173px;
+    margin-right: 193px;
+}
+.footer_header{
+    margin-left: -94px;
+    margin-top: -40px;
+    margin-bottom: -28px;
+    margin-right: 27px;
+    border: solid 5px white;
+    background-color: #063f7b;
+    height: 55px;
+    transform: skew(-25deg);
+    padding-bottom: 62px;
+}
+.footer_header h1{
+    margin-left:56px;
+    font-size: 40px;
+    color:white;
+    font-weight: 700;
+    transform: skew(25deg);
+}
+.footer_container_1,.footer_container_2{
+    border-right: solid 1px black;
+}
+.border_right{
+    border-right: solid 1px white;
+}

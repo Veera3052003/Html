@@ -1,0 +1,25 @@
+hr{ /*Horizontal line*/
+    height:2px;
+    background-color:yellow;
+    border:none;
+}
+a{ /*Anchor tag Elements*/
+    color:skyblue;
+    text-decoration:none;
+    font-size:larger;
+    word-spacing:50px;
+}
+.content:before /*This adds star before the labels which has class name:starlabel*/
+{
+    content:"* ";
+    color: red;
+}
+#Status,#Task,#State{ /*Since the dropdown(select tag) does not comes under input tag.Width given separately  */
+    width:250px;
+}
+.nav-bar{
+    margin-top: -35px;
+}
+.container{
+    margin-top:30px;
+}

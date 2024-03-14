@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chain Dev App Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="HTML_Hands_On_Practice_4.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sticky">
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <div class="nav-content"> 
+                <a href="#home">Home</a>
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#newsletter">Newsletter</a>          
+            </div>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered sign-in">
+                    <div class="modal-content">
+                        <div class="modal-header modal_heading">
+                            <h1 class="modal-title fs-5 modal_header_style" id="exampleModalToggleLabel">LOGIN</h1>
+                            <button type="button" class="btn-close close_button" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <button type="button" data-bs-target="#" class="btn btn-secondary icon-button"><i class="fab fa-facebook button-box blue-button-box"></i>  <b>Connect with Facebook</b></button>
+                            <button type="button" data-bs-target="#" class="btn btn-secondary icon-button"><i class="fab fa-google-plus button-box red-button-box"></i>  <b>Connect with Google</b></button><br/>
+                            <p>Or Use Your Email Address</p>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row modal-footer-button">
+                                <div class="col-6">
+                                    <button class="btn btn-primary button-width" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Login</button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-primary button-width" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Sign up</button>
+                                </div>
+                            </div>              
+                        </div>
+                    </div>
+                </div>]
+            </div>
+            <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered login-in">
+                    <div class="modal-content">
+                        <div class="modal-header modal_heading">
+                            <h1 class="modal-title fs-5 modal_header_style" id="exampleModalToggleLabel2">LOGIN</h1>
+                            <button type="button" class="btn-close close_button" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="#" method="get">
+                                <label>Email/Username</label><br/>
+                                <input type="text" class="email-class"><br/><br/>
+                                <label>Password</label><br/>
+                                <input type="text" class="password-class"><br/><br/>
+                                <label><input type="checkbox" class="checkbox-left"> Remember me on this Computer</label>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row modal-footer-button">
+                                <div class="col-6">
+                                    <button class="btn btn-primary button-width" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="bi bi-chevron-double-left"></i> Back</button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-primary button-width" data-bs-target="#" data-bs-toggle="modal">Login</button>
+                                </div>
+                                <a href="#" class="forgot-password-left">Forgot password?</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered register">
+                    <div class="modal-content">
+                        <div class="modal-header modal_heading">
+                            <h1 class="modal-title fs-5 modal_header_style" id="exampleModalToggleLabel3">REGISTER</h1>
+                            <button type="button" class="btn-close close_button" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <label for="">Full Name</label><br/>
+                            <input type="text"><br/><br/>
+                            <label for="">Email Address</label><br/>
+                            <input type="email" name="" id=""><br/><br/>
+                            <label for="">Password</label><br/>
+                            <input type="password" name="" id=""><br/><br/>
+                            <label><input type="checkbox" class="checkbox-left"> Send me occasional email updates</label>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="row modal-footer-button">
+                                <div class="col-6">
+                                    <button class="btn btn-primary button-width" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="bi bi-chevron-double-left button-box"></i> Back</button>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-primary button-width" data-bs-target="#" data-bs-toggle="modal">Register</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary sign-in-button" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="bi bi-box-arrow-in-right button-box"></i> Sign In Now</button>
+        </nav>
+    </div>
+    <div id="home">
+        <div class="row home-image">
+            <div class="col-6">
+                <img src="slider-left-dec.png" class="slider-left">
+            </div>
+            <div class="col-6">
+                <img src="slider-dec.png" class="slider">
+            </div>
+        </div>
+        <div class="home-body">
+            <h2>Get The Latest App<br/>From App Stores</h2>
+            <p>Chain App Dev is an app landing page HTML5 template based on Bootstrap<br/>v5.1.3 CSS layout provided by TemplateMo, a great website to download<br/>free CSS templates.</p>
+        </div>
+        <div class="home-buttons">
+            <button type="button" class="btn btn-primary home-button" onclick="navigateToPage()">Free Quote <i class="bi bi-apple"></i></button>
+            <button type="button" class="btn btn-primary home-button" onclick="navigateToPage()">Free Quote <i class="bi bi-google-play"></i></button>
+        </div>
+    </div>
+    <div id="services">
+        <div class="services-image">
+            <img src="services-right-dec.png" class="services-right">
+        </div>
+        <div class="services-header">
+            <h4>Amazing <mark>Services & Features</mark> For You<br/></h4>
+        </div>
+        <div class="services-body">    
+            <img src="heading-line-dec.png">
+            <p>If you need the greatest collection of HTML templates for your business,<br/>please visit <mark>TooCSS</mark> Blog. If you need to have a contact form PHP script,<br/>go to <mark>our contact page</mark> for more information.</p>
+        </div>
+        <div class="service-flex-box">
+            <div class="row">
+                <div class="col-3 flex-box flex-box-white-color">
+                    <div>
+                        <img src="service-icon-01.png" class="service-icon-01">
+                        <h4 id="app_maintenance">App Maintenance</h4>
+                        <p>You are not allowed to<br/>redistribute this template ZIP<br/>file on any other website.</p>
+                        <a href="#home">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-3 flex-box flex-box-white-color">
+                    <div>
+                        <img src="service-icon-02.png" class="service-icon-02">
+                        <h4 id="rocket_speed_of_app">Rocket Speed of App</h4>
+                        <p>You are allowed to use the<br/>Chain App Dev HTML<br/>template. Feel free to modify<br/>or edit this layout.</p>
+                        <a href="#home">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-3 flex-box flex-box-white-color">
+                    <div>
+                        <img src="service-icon-03.png" class="service-icon-03">
+                        <h4 id="multi_workflow_idea">Multi Workflow Idea</h4>
+                        <p>If this template is beneficial<br/>for your work, please support<br/>us a <mark>little via PayPal</mark>. Thank<br/>you.</p>
+                        <a href="#home">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-3 flex-box flex-box-white-color">
+                    <div>
+                        <img src="service-icon-04.png" class="service-icon-04">
+                        <h4 id="help_and_support">24/7 Help & Support</h4>
+                        <p>Lorem ipsum dolor<br/>consectetur adipiscing elit<br/>sedder williamsburg photo<br/>booth quinoa and fashion axe.</p>
+                        <a href="#home" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="services-left-dec.png" class="services-left">
+    </div>
+    <div id="about">
+        <div class="row about-content">
+            <div class="col-6">
+                <h4 id="about-header">About <mark>What We Do</mark> & Who We Are</h4>
+                <img src="heading-line-dec.png">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor<br/>incididunt ut labore et dolore magna.</p>
+                <div class="about-flexbox">
+                    <div class="row">
+                        <div class="col-5 about-flexbox-corner">
+                            <a href="#home"><b>Maintance Problems</b></a>
+                            <p>Loreum ipsum Text</p>
+                        </div>
+                        <div class="col-5 about-flexbox-corner">
+                            <a href="#home"><b>24/7 Support & Help</b></a>
+                            <p>Loreum ipsum Text</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-5 about-flexbox-corner">
+                            <a href="#home"><b>Fixing Issues About</b></a>
+                            <p>Loreum ipsum Text</p>
+                        </div>
+                        <div class="col-5 about-flexbox-corner">
+                            <a href="#home"><b>Co.Development</b></a>
+                            <p>Loreum ipsum Text</p>
+                        </div>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod tempor<br/>idunte ut labore et dolore adipiscing magna.</p>
+                <button type="button" class="btn btn-primary btn-lg about-button" onclick="navigateToPage()">Start 14-Day Free Trial</button>
+                <script>
+                    function navigateToPage() {
+                        window.location.href = '#home';
+                    }
+                    </script>
+                <p>*No Credit Card Required</p>
+            </div>
+            <div class="col-6" id="about-right">
+                <img src="about-bg.jpg" class="about-right-1">
+                <img src="about-right-dec.png" class="about-right-2">
+            </div>
+        </div>
+        <div class="about-container">
+            <div>
+                <h4 id="about-header">Check What <mark>The Clients Say</mark> About Our App Dev</h4>
+                <img src="heading-line-dec.png">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod<br/>tempor incididunt ut labore et dolore magna.</p>
+            </div>
+            <div class="about-flex-box">
+                <div class="row">
+                    <div class="col-3 flex-box-padding">
+                        <a href="DavidMartino"><h4>David Martino Co</h4></a>
+                        <p>30 November 2021</p>
+                    </div>
+                    <div class="col-3 flex-box-padding">
+                        <p>Financial Apps</p>
+                    </div>
+                    <div class="col-3 flex-box-padding">
+                        <div class="star">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <p>4.8</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 flex-box-padding">
+                        <a href="#JakeHarisNyo"><h4>Jake Haris Nyo</h4></a>
+                        <p>29 November 2021</p>
+                    </div>
+                    <div class="col-3 flex-box-padding">
+                        <p>Digital Business</p>
+                    </div>
+                    <div class="col-3 flex-box-padding">
+                        <div class="star">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <p>4.5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 flex-box-padding">
+                        <a href="#MayCatherina"><h4>May Catherina</h4></a>
+                        <p>27 November 2021</p>
+                    </div>
+                    <div class="col-3 flex-box-padding">
+                        <p>Business & Economics</p>
+                    </div>
+                    <div class="col-3 flex-box-padding">
+                        <div class="star">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <p>4.7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 flex-box-padding">
+                        <a href="#RandomUser"><h4>Random User</h4></a>
+                        <p>24 November 2021</p>
+                    </div>
+                    <div class="col-3 flex-box-padding">
+                        <p>New App Ecosystem</p>
+                    </div>
+                    <div class="col-3 flex-box-padding">
+                        <div class="star">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <p>3.9</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3 flex-box-padding">
+                        <a href="#MarkAmberDo"><h4>Mark Amber Do</h4></a>
+                        <p>21 November 2021</p>
+                    </div>
+                    <div class="col-3 flex-box-padding">
+                        <p>Web Development</p>
+                    </div>
+                    <div class="col-3 flex-box-padding">
+                        <div class="star">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                                <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
+                            </svg>
+                            <p>4.3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="about-flex-box-right">
+                <div id="#DavidMartino" class="about-flex-box-side-container">
+                    <div class="row">
+                        <div class="col-3 right-flex-box-padding">
+                            <div class="right-flex-box">
+                                <img src="quote.png" class="quote-image">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adpiscing<br/>elit, sed do eismod tempor idunte ut labore et dolore<br/>magna aliqua darwin kengan lorem ipsum dolor sit<br/>amet, consectetur picing elit massive big blasta.”</p>
+                            </div>
+                            <div class="client-image-circle">
+                                <img src="client-image.jpg" class="client-image">
+                            </div>
+                            <div class="client-details">
+                                <h4>David Martino</h4>
+                                <p>CEO of David Company</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="#JakeHarisNyo" class="about-flex-box-side-container">
+                    <div class="row">
+                        <div class="col-3 right-flex-box-padding">
+                            <div class="right-flex-box">
+                                <img src="quote.png" class="quote-image">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adpiscing<br/>elit, sed do eismod tempor idunte ut labore et dolore<br/>magna aliqua darwin kengan lorem ipsum dolor sit<br/>amet, consectetur picing elit massive big blasta.”</p>
+                            </div>
+                            <div class="client-image-circle">
+                                <img src="client-image.jpg" class="client-image">
+                            </div>
+                            <div class="client-details">
+                                <h4>Jake H. Nyo</h4>
+                                <p>CTO of Digital Company</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="#MayCatherina" class="about-flex-box-side-container">
+                    <div class="row">
+                        <div class="col-3 right-flex-box-padding">
+                            <div class="right-flex-box">
+                                <img src="quote.png" class="quote-image">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adpiscing<br/>elit, sed do eismod tempor idunte ut labore et dolore<br/>magna aliqua darwin kengan lorem ipsum dolor sit<br/>amet, consectetur picing elit massive big blasta.”</p>
+                            </div>
+                            <div class="client-image-circle">
+                                <img src="client-image.jpg" class="client-image">
+                            </div>
+                            <div class="client-details">
+                                <h4>May C.</h4>
+                                <p>Founder of Catherina Co.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="#RandomUser" class="about-flex-box-side-container">
+                    <div class="row">
+                        <div class="col-3 right-flex-box-padding">
+                            <div class="right-flex-box">
+                                <img src="quote.png" class="quote-image">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adpiscing<br/>elit, sed do eismod tempor idunte ut labore et dolore<br/>magna aliqua darwin kengan lorem ipsum dolor sit<br/>amet, consectetur picing elit massive big blasta.”</p>
+                            </div>
+                            <div class="client-image-circle">
+                                <img src="client-image.jpg" class="client-image">
+                            </div>
+                            <div class="client-details">
+                                <h4>Random Staff</h4>
+                                <p>Manager, Digital Company</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="#MarkAmberDo" class="about-flex-box-side-container">
+                    <div class="row">
+                        <div class="col-3 right-flex-box-padding">
+                            <div class="right-flex-box">
+                                <img src="quote.png" class="quote-image">
+                                <p>“Lorem ipsum dolor sit amet, consectetur adpiscing<br/>elit, sed do eismod tempor idunte ut labore et dolore<br/>magna aliqua darwin kengan lorem ipsum dolor sit<br/>amet, consectetur picing elit massive big blasta.”</p>
+                            </div>
+                            <div class="client-image-circle">
+                                <img src="client-image.jpg" class="client-image">
+                            </div>
+                            <div class="client-details">
+                                <h4>Mark Am</h4>
+                                <p>CTO, Amber Do Company</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </div> 
+    <div id="pricing">
+        <div class="pricing-container">
+            <h4 id="pricing-header">We Have The Best Pre-Order <mark>Prices</mark> You Can Get</h4>
+            <img src="heading-line-dec.png">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eismod<br/>tempor incididunt ut labore et dolore magna.</p>
+        </div>
+        <div class="pricing-flex-box">
+            <div class="row pricing-flex">
+                <div class="col-4 pricing-box regular-box">
+                    <img src="regular-table-top.png" class="regular-top">
+                    <div class="heading">
+                        <h2>$12</h2>
+                    </div>
+                    <div class="pricing-content">
+                        <h4>Standard Plan App</h4>
+                        <img src="pricing-table-01.png">
+                        <ul>
+                            <li>Lorem Ipsum Dolores</li>
+                            <li>20 TB of Storage</li>
+                            <li><strike class="strike">Life-time Support</strike></li>
+                            <li><strike class="strike">Premium Add-Ons</strike></li>
+                            <li><strike class="strike">Fastest Network</strike></li>
+                            <li><strike class="strike">More Options</strike></li>
+                        </ul>
+                        <img src="regular-table-bottom.png" class="regular-bottom">
+                        <button type="button" class="btn btn-primary btn-lg pricing-button" onclick="navigateToPage()">Purchase This Plan Now</button>
+                    </div>
+                </div>
+                <div class="col-4 pricing-box pro-box">
+                    <img src="pro-table-top.png" class="regular-top">
+                    <div class="heading_1">   
+                        <h2>$25</h2>
+                    </div> 
+                    <div class="pricing-content_1">
+                        <h4>Business Plan App</h4>
+                        <img src="pricing-table-01.png">
+                        <ul>
+                            <li>Lorem Ipsum Dolores</li>
+                            <li>50 TB of Storage</li>
+                            <li>Life-time Support</li>
+                            <li>Premium Add-Ons</li>
+                            <li><strike class="strike">Fastest Network</strike></li>
+                            <li><strike class="strike">More Options</strike></li>
+                        </ul>
+                        <img src="pro-table-bottom.png" class="pro-bottom">
+                        <button type="button" class="btn btn-primary btn-lg pricing-button pro-pricing-button" onclick="navigateToPage()">Purchase This Plan Now</button>
+                    </div>
+                </div>
+                <div class="col-4 pricing-box regular-box">
+                    <img src="regular-table-top.png" class="regular-top">
+                    <div class="heading">    
+                        <h2>$66</h2>
+                    </div>
+                    <div class="pricing-content">
+                        <h4>Premium Plan App</h4>
+                        <img src="pricing-table-01.png">
+                        <ul>
+                            <li>Lorem Ipsum Dolores</li>
+                            <li>120 TB of Storage</li>
+                            <li>Life-time Support</li>
+                            <li>Premium Add-Ons</li>
+                            <li>Fastest Network</li>
+                            <li>More Options</li>
+                        </ul>
+                        <img src="regular-table-bottom.png" class="regular-bottom">
+                        <button type="button" class="btn btn-primary btn-lg pricing-button" onclick="navigateToPage()">Purchase This Plan Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="newsletter">
+        <div class="newsletter-container">
+            <h4>Join Our Mailing List To Receive The<br/>News & Latest Trends</h4>
+            <input type="text" placeholder="Email Address..." class="email-box" required>
+            <button type="button" class="btn btn-primary btn-lg footer-button" onclick="navigateToPage()">Subscribe Now <i class="bi bi-chevron-right"></i></button>
+        </div>
+        <div class="row footer-flex">
+            <div class="col-3 footer">
+                <h4>Contact Us</h4>
+                <div class="list foot-p">
+                    <p>Rio de Janeiro - RJ, 22795-008, Brazil</p>
+                    <p>010-020-0340</p>
+                    <p>info@company.co</p>
+                </div>
+            </div>
+            <div class="col-3 footer">
+                <h4>About Us</h4>
+                <div class="row">
+                    <div class="col-6 footer-part">
+                        <div class="list foot1-p">
+                            <p><a href="#home">Home</a></p>
+                            <p><a href="#services">Services</a></p>
+                            <p><a href="#about">About</a></p>
+                            <p><a href="#home">Testimonials</a></p>
+                            <p><a href="#pricing">Pricing</a></p>
+                        </div>
+                    </div>
+                    <div class="col-6 footer-part">
+                        <div class="list foot1-p">
+                            <p><a href="#about">About</a></p>
+                            <p><a href="#home">Testimonials</a></p>
+                            <p><a href="#pricing">Pricing</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 footer">
+                <h4>Useful Links</h4>
+                <div class="row">
+                    <div class="col-6 footer-part">
+                        <div class="list foot1-p">
+                            <p><a href="#home">Free Apps</a></p>
+                            <p><a href="#home">App Engine</a></p>
+                            <p><a href="#home">Programming</a></p>
+                            <p><a href="#home">Development</a></p>
+                            <p><a href="#home">App News</a></p>
+                        </div>
+                    </div>
+                    <div class="col-6 footer-part">
+                        <div class="list foot1-p">
+                            <p><a href="#home">App Dev Team</a><p>
+                            <p><a href="#home">Digital Web</a></p>
+                            <p><a href="#home">Normal Apps</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3 footer">
+                <h4>About Our Company</h4>
+                <img src="white-logo.png" class="white-logo">
+                <p>Lorem ipsum dolor sit amet,<br/>consectetur adipiscing elit, sed do<br/>eiusmod tempor incididunt ut labore et <br/>dolore.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrights">
+        <p>Copyright © 2022 Chain App Dev Company. All Rights Reserved.<br/>Design: TemplateMo</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+.main_container{
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left:10px;
+    padding-right:10px;
+}
+.image{
+    width:332px;
+    height:279px;
+}
+.content{
+    padding:25px;
+}
+.row1,.row2,.row3,.row4{
+    display:flex;
+}
+.row2{
+    margin-top:-1px;
+}
+.row3{
+    margin-top:-5px;
+}
+.row4{
+    margin-top:-2px;
+}
+h1{
+    font-size:28px;
+} 
+p{
+    margin-top:22px;
+    font-size:18px;
+    color:#636363;
+    font-weight:500;
+}
+h4{
+    font-size:31px;
+    font-weight:700;
+    color: #fa8128;
+}

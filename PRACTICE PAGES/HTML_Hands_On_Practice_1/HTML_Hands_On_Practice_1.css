@@ -1,0 +1,33 @@
+hr{ /*Horizontal line*/
+    height:2px;
+    background-color:yellow;
+    border:none;
+}
+a{ /*Anchor tag Elements*/
+    color:skyblue;
+    text-decoration:none;
+    font-size:larger;
+    word-spacing:50px;
+}
+#general{ /*Every line inside the "form tag" starts in new line bcoz of the below code*/
+    white-space: pre;
+}
+.starlabel:before /*This adds star before the labels which has class name:starlabel*/
+{
+    content:"* ";
+    color: red;
+}
+input{ /*Every input field has width:250px*/
+    width:250px;
+}
+#days,#hrs,#min{ /*To make the input field shorter length*/
+    width:50px;
+}
+.status{ /*Since the dropdown(select tag) does not comes under input tag.Width given separately*/
+    width:250px;
+}
+div{ /*For left and right column view, the content is divided into two div tags*/
+    float:left;
+    width:36%;
+}
+

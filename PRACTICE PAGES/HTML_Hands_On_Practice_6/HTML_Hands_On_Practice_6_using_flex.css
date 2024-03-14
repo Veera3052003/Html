@@ -1,0 +1,36 @@
+.main_container{
+    margin-left:2%;
+    margin-right:2%;
+    display:flex; 
+    /* flex-direction:row; */
+    padding:20px;
+}
+.content_1,.content_2,.content_3,.content_4,.content_5,.content_6,.content_7,.content_8,.image{
+    height:274px;
+    width:300px;
+}
+.content_2,.image4,.content_6,.image8{
+    margin-left:-20px;
+}
+.content_2,.content_6{
+    padding-left: 25px;
+}
+.content_4,.content_8{
+    margin-left:-21px;
+}
+.content_1,.content_2,.content_3,.content_4,.content_5,.content_6,.content_7,.content_8{
+    padding-top:10px;
+}
+h1{
+    font-size:27px;
+} 
+p{
+    font-size:17px;
+    color:#636363;
+    font-weight:500;
+}
+h4{
+    font-size:31px;
+    font-weight:700;
+    color: #fa8128;
+}

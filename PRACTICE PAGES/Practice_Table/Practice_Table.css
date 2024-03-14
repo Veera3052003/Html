@@ -1,0 +1,11 @@
+table{
+    text-align: center;
+}
+#para{
+    vertical-align: super;
+    /*vertical-align: bottom;
+    vertical-align: sub;*/
+    /*vertical-align: text-bottom;
+    vertical-align: text-top;
+    vertical-align: top;*/
+}

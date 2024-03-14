@@ -1,0 +1,441 @@
+.side_nav_bar{
+    position:fixed;
+    height:100%;
+    top:0;
+    left:0;
+    width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: black;
+}
+
+.dp_image{
+    border-radius: 50%;
+    height:130px;
+    width:126px;
+    margin-top:17px;
+    margin-left:72px;
+    border:10px solid;
+}
+
+#name{
+    text-align:center;
+    margin-top:10px;
+    font-size:26px;
+    color:white;
+}
+
+.social_media{ /*For entire div tag*/
+    font-size: 24px;
+    text-align:center;
+}
+
+.media_icon:hover{ 
+    color:white;
+    background:#149ddd;
+}
+
+.media_icon{ /* For the icon */
+    width:30px;
+    font-size:20px;
+    background-color: #212431;
+    color:white;
+    border-radius:50%;
+    height:30px;
+    padding-top:5px;
+}
+
+.nav_bar_content{
+    margin-top:40px;
+}
+
+.ul_items{
+    list-style-type: none;
+    font-size:20px;
+}
+
+.ul_items a{
+    text-decoration: none;
+    color:grey;
+}
+
+
+.ul_items i{
+    font-size:26px;
+    display:flex;
+    margin-bottom: 20px;
+}
+
+.ul_items i:hover{
+    color:#149ddd;
+}
+
+.ul_items p{
+    font-size:20px;
+    margin-left:15px;
+}
+
+.ul_items p:hover{
+    color:white;
+}
+
+.nav_bar_footer{
+    width:210px; 
+    text-align:center;
+    margin-left:30px;
+    color:white;
+}
+
+.body_content{
+    margin-left:300px;
+    margin-right:0px;
+}
+
+.home_img{
+    width:100%;
+    height:100%;
+    position:relative;
+    z-index:1;
+}
+
+.home_name{
+    z-index:2;
+    color:white;
+    margin-top:-571px;
+    margin-left:391px;
+    font-size:50px;
+    position:absolute;
+}
+
+#about,#resume,.skills,#portfolio,#services,#contact,#testimonials{
+    padding:60px 30px;
+}
+
+h4{
+    font-size:35px;
+    color: #173b6c;
+}
+
+p{
+    font-size:17px;
+}
+
+.line{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 3px;
+    width: 54px;
+    background-color: #149ddd;
+}
+
+.about_body{
+    display:flex;
+    margin-top:34px;
+}
+
+.about_body_left{
+    height:350px;
+    width:320px;
+}
+
+.about_body_right{
+    margin-left:20px;
+}
+
+.about_body_right h4{
+    color:#173b6c;
+    font-size:28px;
+}
+
+.about_body_right_list{
+    display:flex;
+}
+
+.list_left ul,.list_right ul{
+    list-style-type: none;
+    font-size:17px;
+    line-height:2.5;
+}
+
+.facts_heading{
+    margin-top:70px;
+}
+
+.facts_body_column{
+    display: flex;
+    width: 222px;
+    margin-right: 20px;
+}
+
+.facts_body{
+    display:flex;
+    margin-left:34px;
+}
+
+.icon_color{
+    color:#149ddd;
+}
+
+.icon_style{
+    font-size:50px;
+    /* margin-right:23px; */
+}
+
+.facts_body_column_right{ 
+    padding-top:16px;
+    padding-left:15px;
+    padding-right:30px;
+    width:170px;
+}
+
+.facts_body_column_right h4{
+    font-size: 46px;
+    color: black;
+}
+
+.facts_body_column_right p{
+    font-size:16px;
+}
+
+.facts_body_column_right_paragraph_heading_color{
+    color:#173b6c;
+}
+
+.skills,#portfolio,#testimonials{
+    background-color: #f5f8fd;
+    padding-bottom:60px;
+}
+
+.skills_body{
+    display:flex;
+}
+
+.skills_body_left,.skills_body_right{
+    width:50%;
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.progress_value{
+    float:right;
+    margin-top:-28px;
+}
+
+.skills_progress{
+    margin-bottom:25px;
+}
+
+.progress_heading,.progress_value{
+    font-size:12px;
+}
+
+.resume_body{
+    display:flex;
+}
+
+.resume_body_left,.resume_body_right{
+    width:50%;
+}
+
+.resume_header{
+    font-size:30px;
+}
+
+.resume_body_header{
+    font-size:18px;
+    color:black;
+    font-weight:600;
+}
+
+.resume_body_paragraph_place{
+    font-style: italic;
+}
+
+.resume_body_paragraph_year{
+    width: 148px;
+    background-color: #f5f8fd;
+    padding-left: 22px;
+    padding-right: 9px;
+}
+
+.resume_list{
+    font-size: 17px;
+    line-height: 2;
+    margin-left:-12px;
+}
+
+.summary_body,.masters_content,.bachelors_content,.senior_graphic_design_specialist_content{
+    margin-bottom:20px;
+}
+
+.summary_body,.masters,.bachelors,.senior_graphic_design_specialist,.graphic_design_specialist{
+    display:flex;
+}
+
+.circle{
+    height:16px;
+    width:16px;
+    border-radius: 50%;
+    border:solid 2px #173b6c;
+    color:white;
+    margin-top:2px;
+    margin-left:-6px;
+    margin-right:9px;
+}
+
+.vertical_line{
+    height:193px;
+    width:2px;
+    background-color:#173b6c;
+    margin-left: 1px;
+    margin-bottom: -2px;
+}
+
+.line1{
+    height:250px;
+}
+
+.line3{
+    height:191px;
+}
+
+.line4{
+    height:423px;
+}
+
+.line5{
+    height:400px;
+}
+
+.services_body_row{
+    display:flex;
+}
+
+.services_row_content{
+    display:flex;
+    padding:19px;
+}
+
+.services_row_content_content h4{
+    font-size: 19px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 20px
+}
+
+.services_row_content_content p{
+    font-size:15px;
+}
+
+.services_icon{
+    font-size: 22px;
+    background-color: #149ddd;;
+    color: white;
+    border-radius: 50%;
+    padding:13px;
+    padding-top: 4px;
+    margin-right:20px;
+}
+
+.services_icon:hover{
+    color:#149ddd;
+    background:white;
+    border:solid 1px #149ddd;
+}
+
+.move_to_right{
+    margin-left: 36px;
+}
+
+.contact_body,.info,.form_row1{
+    display:flex;
+}
+
+.card{
+    margin-top:20px;
+    box-shadow: 5px 5px 5px rgb(109, 95, 95);
+}
+
+.card_left{
+    width:40%;
+}
+
+.card_right{
+    margin-left:23px;
+    width:55%;
+    padding-bottom:20px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.form_row1{
+    margin-top:6px;
+    margin-bottom:29px;
+}
+
+.info_icon{
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: #dff3fc;
+    color:#149ddd;
+    height: 41px;
+    width: 40px;
+    text-align: center;
+}
+
+.info_icon:hover{
+    color:white;
+    background-color: #149ddd;
+}
+
+.info_content{
+    margin-left:14px;
+}
+
+.info_content h4{
+    font-size:24px;
+    color:black;
+}
+
+.info_content p{
+    font-size:14px;
+}
+
+.info{
+    margin-top:10px;
+}
+
+.card-body iframe{
+    margin-left:10px;
+}
+
+.card-body label{
+    font-size:16px;
+    margin-bottom:13px;
+}
+
+.card-body input{
+    height:40px;
+    width:218px;
+}
+
+.form_row1_right{
+    margin-left:23px;
+}
+
+.sub_input{
+    width:476px!important;
+    margin-bottom:42px;
+}
+
+.submit_button{
+    margin-top:42px;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+    background-color:#149ddd;
+    color:white;
+    border-radius:4px;
+    border-color: transparent;
+    margin-left:170px;
+}

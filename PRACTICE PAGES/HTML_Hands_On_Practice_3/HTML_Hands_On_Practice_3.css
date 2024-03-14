@@ -1,0 +1,75 @@
+*{
+    background-color: plum;
+}
+.stick{
+    position: sticky;
+    top: 0;
+}
+
+a{ /*Anchor tag Elements*/
+    color:black;
+    font-size:25px;
+}
+#home,.nav-bar,#concert{
+    margin-left: 3%;
+    margin-right:3%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#home_photo{
+    padding-top: 15px;
+    width:1250px;
+    padding-bottom: 30px;
+    height:700px;
+}
+#photo_1{
+    width:390px;
+    height:250px;
+}
+#photo_2{
+    height:600px;
+    width:390px;
+}
+#photo_3{
+    width:390px;
+    height: 250px;
+}
+#photo_4{
+    height: 660px;
+    width:385px;
+}
+#photo_5{
+    height: 309px;
+    width:390px;    
+}
+#photo_6{
+    height:560px;
+    width: 810px;
+}
+#photo_7{
+    width:390px;
+    height:650px;
+}
+#photo_8{
+    height:400px;
+    width:810px;
+    padding-bottom: 30px;
+}
+#line2_1{
+    margin-top:-310px;
+    margin-right:420px;
+}
+#line2_2{
+    margin-top: -310px;
+}
+#line3{
+    margin-top:-320px;
+    margin-left:420px;
+}
+#line4_1{
+    margin-top:-220px;
+}
+#line4_2{
+    margin-top:30px;
+}

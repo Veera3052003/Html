@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bug tracker Form</title>
+</head>
+<body>
+    <div>
+        <img src="bug_tracker.jpg" alt="Bug_tracker_logo" width="20px" height="20px">BUG TRACKER
+    </div>
+    <p>Bug Title <input type="text" name="bug_title" required></p><br/>
+    <p>Issue Description <input type="text" name="issue_description" required></p><br/>
+    <p>Operating System <select name="dropdown" required>
+        <option>-Select-</option>
+        <option value="Improper drivers">Improper Drivers</option>
+        <option value="Thrashing">Thrashing</option>
+        <option value="Virus">Virus</option>
+        <option value="Trojan Horse">Trojan Horse</option>
+        <option value="Others">Others</option>
+    </select></p><br/>
+    <p>Browser <input type="radio" id="Internet_Explorer" name="browser" value="Internet_Explorer">
+        <label for="Internet_Explorer">Internet Explorer</label><br/>
+        <input type="radio" id="Chrome" name="browser" value="Chrome">
+        <label for="Chrome">Chrome</label><br/>
+        <input type="radio" id="Mozilla_firefox" name="browser" value="Mozilla_firefox">
+        <label for="Mozilla_firefox">Internet Explorer</label><br/>
+        <input type="radio" id="safari" name="browser" value="safari">
+        <label for="safari">Internet Explorer</label><br/>
+        <input type="radio" id="opera" name="browser" value="opera">
+        <label for="opera">Opera</label><br/>
+    </p>
+    <p>Assigned to<select name="dropdown" required>
+        <option>-Select-</option>
+        <option value="Person 1">Person 1</option>
+        <option value="Person 2">Person 2</option>
+        <option value="Person 3">Person 3</option>
+        </select>
+    </p>
+    <p><button type="submit" value="Submit"></button>
+    </p>
+
+</body>
+</html>

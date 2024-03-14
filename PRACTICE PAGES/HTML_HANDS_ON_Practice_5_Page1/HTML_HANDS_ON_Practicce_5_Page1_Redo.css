@@ -1,0 +1,59 @@
+.content{
+    margin-left: 15%;
+    margin-right:15%;
+    border:solid;
+    overflow:hidden;
+}
+.side_polygon{
+    clip-path: polygon(0 78%, 0 0, 37% 0);
+    background-color:#5084cc;
+    position:relative;
+    height: 989px;
+    width:543px;
+    float:left;
+    margin-left:-13px;
+}
+.side_polygon_shape_move{
+    margin-left:-458px;
+    position:relative;
+    float:left;
+    margin-top:296px;
+}
+.side_polygon_shape_outline{
+    shape-outside: polygon(0 88%, 0 0, 100% 0);  
+    width: 68px; 
+    height: 150px; 
+    float: left;
+    position:relative;
+    margin-top:225px;
+}
+.heading{
+    margin-left: 142px;
+    margin-bottom: 35px;
+    position:relative;
+}
+.heading h1{
+    font-size: 54px;
+    font-weight: 600;
+}
+.heading p{
+    margin-left: 64px;
+    margin-top: -19px;
+    font-size: 21px;
+    font-weight: 500;
+}
+.box{
+    position: relative;
+    background-color: #003151;
+    color: white;
+    height: 140px;
+    width: 587px;
+    margin-top: 41px;
+    margin-left: 43px;
+}
+.box p{
+    margin-left: 23px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+} 

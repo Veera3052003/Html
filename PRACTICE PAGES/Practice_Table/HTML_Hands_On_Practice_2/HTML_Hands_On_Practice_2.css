@@ -1,0 +1,84 @@
+.line_1,.line_2{/*shape line drawn using height and width*/
+    width:150px;/*Length of the line*/
+    background-color:#6d493b;/*Color of the line*/
+    height:3px;/*Height of the line*/
+}
+.circle{/*shape circle drawn using height, width and border-radius*/
+    height:20px;/*Height of the circle*/
+    width:20px;/*width of the circle*/
+    background-color: #6d493b;
+    border-radius: 50%;/*This helps to draw circle*/
+    margin-top:-10px;/*To move the circle upward*/
+}
+#grp{
+    display:flex;/*To display all the 3 shapes in a single line*/
+}
+.box{/*shape box drawn using width and height */
+    width:275px;
+    height:330px;
+    background-color: burlywood;
+    display:flex;
+    margin-left: 350px;/*To move the box from the left-side of the margin*/
+    margin-top: -400px;/*To move the box towards top*/
+    position:absolute;/*To place the box under the photo*/
+}/*Note: Absolute is child class*/
+#photo{
+    width:275px;
+    height:300px;
+    border-radius:50%;/*This makes the photo in circle shape*/
+    display:flex;
+    margin-left:350px;/*To move the photo from the left-side of the margin*/
+    margin-top: -200px;/*To move the photo toward top*/
+    position:relative;/*To place the photo on the top of the box */
+}/*Note: Relative is parent class*/
+#name{/*Heading*/
+    font-size: 60px;
+    /*margin-left:15px;To move the text from the left-side of the margin*/
+}
+.left_side_page1,.right_side_page1{
+    float:left; /*To make the left and right side of page1 float towards left*/
+}
+.page1,.page2{/*To move the page1 towards center*/
+    margin-left: 25%;
+    margin-right: 25%;
+}
+p{
+    font-size: 20px;
+}
+*{
+    background-color:floralwhite;
+}
+h4{
+    text-decoration-line:underline;
+    text-decoration-color: burlywood;
+    font-size:25px;
+}
+.horizontal_line{
+    height:710px;
+    background-color: #6d493b;
+    width: 2px;
+    position:absolute;/*To fix the line position*/
+    margin-left: -30px;/*To move the line towards left*/
+    margin-top: 25px;/*To move the line towards down from the top*/
+}
+.page2{
+    position:absolute;/*Child class of page1*/
+    margin-top: 750px;/*To move the page towards down from 750px top*/
+    margin-left:25%;/*To move the page2 towards center*/
+    margin-right:25%;
+    border-color: burlywood;
+    border-width:15px;/*Border size*/
+    border-style:solid;
+    padding:10px 20px 10px 20px;/*The content inside the page2*/
+           /*top right bottom left */
+}
+.right_side_page1{
+    margin-left:360px;/*To move the right side of page1 from the left side of margin*/
+    position:absolute;
+}
+.left_side_page1{
+    margin-left:15px;/*To move the left side of page1 from the left side of margin*/
+    position:relative;/*To fix the position parent class to page 2*/
+    margin-top:-70px;/*To move the left side of page1 towards up*/
+}
+

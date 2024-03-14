@@ -1,0 +1,31 @@
+.main_container{
+    margin-left:20px;
+    margin-right:20px;
+    /* padding:34px; */
+}
+.image{
+    height: 253px;
+    width: 307px;
+    /* margin-left:-15px; */
+}
+/* .content_1,.content_2,.content_3,.content_4,.content_5,.content_6,.content_7,.content_8{
+    height: 253px;
+    width: 318px;
+}
+.content_2,.image4,.content_6,.image8{
+    margin-left:-17px;
+}
+.image1,.image2,.content_3,.content_4,.image5,.image6,.content_7,.content_8{
+    margin-left:-5px;
+} */
+h1{
+    font-size:20px;
+}
+p{
+    font-size:18px;
+    color:#4d4d4d;
+}
+h4{
+    font-size:20px;
+    color: #fa8128;
+}
